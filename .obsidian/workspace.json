@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DDIA/Trade-Offs in Data Systems Architecture.md",
+                "file": "DDIA/Scalability.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Trade-Offs in Data Systems Architecture"
+              "title": "Scalability"
             }
           }
         ]
@@ -211,10 +211,12 @@
   },
   "active": "836a61ff9db9c3ab",
   "lastOpenFiles": [
+    "DDIA/img/Pasted image 20260914004047.png",
+    "DDIA/Trade-Offs in Data Systems Architecture.md",
+    "DDIA/Scalability.md",
     "DDIA/Describing Performance.md",
     "DDIA/Fault Tolerance.md",
     "DDIA/Case study- social network.md",
-    "DDIA/Trade-Offs in Data Systems Architecture.md",
     "img.md",
     "img/Pasted.md",
     "img",
