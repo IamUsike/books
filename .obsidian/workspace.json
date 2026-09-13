@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DDIA/Describing Performance.md",
+                "file": "DDIA/Fault Tolerance.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Describing Performance"
+              "title": "Fault Tolerance"
             }
           }
         ]
@@ -212,11 +212,17 @@
   },
   "active": "836a61ff9db9c3ab",
   "lastOpenFiles": [
-    "Pasted image 20260913175812.png",
-    "DDIA/img/Pasted image 20260906154851.png",
-    "DDIA/Case study- social network.md",
-    "DDIA/Describing Performance.md",
     "DDIA/Trade-Offs in Data Systems Architecture.md",
+    "DDIA/Fault Tolerance.md",
+    "DDIA/Describing Performance.md",
+    "DDIA/Case study- social network.md",
+    "img.md",
+    "img/Pasted.md",
+    "img",
+    "DDIA/img/Pasted.md",
+    "DDIA/img/Pasted image 20260906154851.png",
+    "DDIA/Fault Tolerance",
+    "DDIA/img/Pasted image 20260913175812.png",
     "DDIA/img/Pasted image 20260902154406.png",
     "DDIA/img",
     "Pasted image 20260902153932.png",
