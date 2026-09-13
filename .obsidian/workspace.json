@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DDIA/Fault Tolerance.md",
+                "file": "DDIA/Trade-Offs in Data Systems Architecture.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Fault Tolerance"
+              "title": "Trade-Offs in Data Systems Architecture"
             }
           }
         ]
@@ -93,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "2428ed87850fc01b",
@@ -212,10 +211,10 @@
   },
   "active": "836a61ff9db9c3ab",
   "lastOpenFiles": [
-    "DDIA/Trade-Offs in Data Systems Architecture.md",
-    "DDIA/Fault Tolerance.md",
     "DDIA/Describing Performance.md",
+    "DDIA/Fault Tolerance.md",
     "DDIA/Case study- social network.md",
+    "DDIA/Trade-Offs in Data Systems Architecture.md",
     "img.md",
     "img/Pasted.md",
     "img",

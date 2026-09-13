@@ -50,7 +50,7 @@ Transaction: A group of reads and writes that form a logical unit.
 
 --- 
 ## Cloud vs Self Hosting 
-![](Pasted%20image%2020260902154406.png)
+![](./img/Pasted%20image%2020260902154406.png)
 
 - if you have exp settins os and load is predictable it's often cheaper to setup your own machines and infra 
 - if you need a system that you dont already know how to deploy and operate, adopting a cloud service is often quicker and easier to operate. 

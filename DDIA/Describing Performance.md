@@ -1,7 +1,7 @@
 - **Response Time**: The elapsed time from which a user makes a req and receives a response. 
 - **Throughput**: The no. of req/s or vol of data/s that the system is processing. 
 
-![](Pasted%20image%2020260906154851.png)
+![](img/Pasted%20image%2020260906154851.png)
 **M/M/1 queue:** a simple model with one server, random (Poisson) arrivals at rate λ, and random (exponential) service times at rate μ. Average time in system: **W = 1/(μ − λ)**.
 where μ : service rate and 
 	  λ : arrival rate 
@@ -34,7 +34,7 @@ The mitigations listed (exponential backoff, circuit breakers, load shedding, ba
 - **Token bucket** — caps the rate of requests admitted in the first place
 
 ## latency and response time 
-![](Pasted%20image%2020260913175812.png)
+![](./img/Pasted%20image%2020260913175812.png)
 
 **head of line blocking**: it only takes a small no. of slow reqs to hold up the processing of subsequesnt reqs 
 
