@@ -91,3 +91,25 @@ use case reasons might be
 - Operating with large vols of data: rather that bringing it to a machine to process that data, it is beneficial to process in the system that the data is in. 
 - troubleshooting is hard. (multiple nodes )
 - Need to maintain consistecy accross different services (if they have their own db)
+
+---
+## Interview Notes
+- **OLTP vs OLAP** affects storage layout: OLTP uses row stores (fetch a whole record by key), OLAP uses column stores (scan a few columns over many rows). Covered later in the book.
+- **ETL vs ELT**: modern warehouses (Snowflake, BigQuery) load raw data first and transform inside the warehouse.
+- **Change Data Capture (CDC)**: stream DB changes (e.g. Debezium reading the Postgres WAL / MySQL binlog) into Kafka, then into warehouses, caches, and search indexes. Keeps derived data in sync without dual writes.
+- **Dual writes are a trap**: writing to DB and cache/search from app code leads to inconsistency when one write fails. Prefer one system of record plus derived data built from its log.
+- **Lakehouse**: data lake files (Parquet) plus a table format (Iceberg, Delta Lake, Hudi) that adds transactions and schemas.
+- Fallacies of distributed computing: the network is reliable, latency is zero, bandwidth is infinite, the network is secure, topology doesn't change, there is one admin, transport cost is zero, the network is homogeneous.
+- In an interview, say out loud what you *give up* with each choice. That is what the interviewer is grading.
+
+## Questions to Ponder
+- Product wants a live analytics dashboard. How do you serve it without hurting the prod DB? (Read replica, CDC into a warehouse or OLAP store like ClickHouse/Druid.)
+- Which components in your design are systems of record and which are derived? Can each derived one be rebuilt from scratch?
+- When does self-hosting beat cloud on cost? (Steady, predictable load plus in-house ops skill.)
+- Microservice with its own DB: how do you keep data consistent across services? (Sagas, outbox pattern.)
+
+## Further Reading
+- *Amazon Aurora: Design Considerations for High Throughput Cloud-Native Relational Databases* — SIGMOD 2017 (separation of storage and compute)
+- *The Snowflake Elastic Data Warehouse* — SIGMOD 2016
+- *Lakehouse: A New Generation of Open Platforms* — Armbrust et al., CIDR 2021
+- *Turning the database inside-out* — Martin Kleppmann (talk)

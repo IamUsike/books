@@ -26,3 +26,23 @@ Some interesting questions?
 
 
 ![](./img/Pasted%20image%2020260914004047.png)
+---
+## Interview Notes
+- **Describe load first, then scale**: name the load parameters (reads/s, writes/s, read:write ratio, data size, fan-out, peak vs average) before proposing anything.
+- **Stateless services scale easily**: put them behind a load balancer and add copies. The hard part is the stateful layer (DB, cache, queues). Push state down.
+- **Scale-up first** is often correct: simpler, no distributed-systems problems. Move to scale-out when you hit hardware limits or need fault tolerance.
+- **Amdahl's Law**: the serial part of the work caps speedup. 5% serial work means max 20× speedup, no matter how many nodes.
+- **Universal Scalability Law**: adds a coherency cost (nodes coordinating). Past some point, adding nodes makes throughput *drop*.
+- Usual scaling tools: caching, read replicas, sharding/partitioning, async processing with queues, CDNs, denormalization.
+- Design for ~10× current load. An architecture for 100× is usually wrong for today and over-built.
+
+## Questions to Ponder
+- Which part of your system has state, and how does it scale?
+- What breaks first if traffic grows 10×? Which metric would tell you early?
+- How do you pick a shard key, and what happens with a hot key?
+- Elastic (autoscaling) vs. manually provisioned: when is each better?
+
+## Further Reading
+- *Scalability! But at what COST?* — McSherry et al., HotOS 2015 (a laptop can beat a cluster)
+- *The Case for Shared Nothing* — Stonebraker, 1986
+- *Guerrilla Capacity Planning* — Neil Gunther (Universal Scalability Law)

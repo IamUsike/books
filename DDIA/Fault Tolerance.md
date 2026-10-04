@@ -55,3 +55,26 @@ things that can help:
 - thorough testing 
 - ensuring process isolation 
 - allowing processes to crash and restart. 
+---
+## Interview Notes
+- **Availability nines**: 99.9% ≈ 8.8 h/year down, 99.99% ≈ 53 min/year, 99.999% ≈ 5 min/year. Serial dependencies multiply: two 99.9% services in series ≈ 99.8%.
+- **MTBF vs MTTR**: you can raise availability by failing less *or* recovering faster. Fast recovery is usually cheaper.
+- **Human error** (config changes, deploys) is the leading cause of outages. Defences: staged rollouts, canaries, feature flags, fast rollback, good observability.
+- **Limit blast radius**: cell-based architecture, bulkheads (separate pools per dependency), shuffle sharding.
+- **Gray failure**: component is degraded but health checks still pass (slow disk, packet loss). Often worse than a clean crash.
+- **Idempotency keys** make retries safe after a timeout (did the payment go through or not?).
+- In an interview, always ask: "What is the SPOF here, and what happens when it dies?" Walk through each box in your diagram.
+
+## Questions to Ponder
+- How do you design a deploy pipeline so one bad config can't take down all regions?
+- Is a hot standby enough if the failure is a software bug? (The standby runs the same code.)
+- Crash vs. continue in a corrupted state: when is crashing the safer choice?
+- How would you test that failover really works? (Game days, chaos engineering.)
+
+## Further Reading
+- *Why Do Computers Stop and What Can Be Done About It?* — Jim Gray, 1985
+- *Simple Testing Can Prevent Most Critical Failures* — Yuan et al., OSDI 2014 (most catastrophic failures come from bad error handling)
+- *Crash-Only Software* — Candea & Fox, HotOS 2003
+- *Gray Failure: The Achilles' Heel of Cloud-Scale Systems* — Huang et al., HotOS 2017
+- *Site Reliability Engineering* (Google SRE book), chapters on postmortems and error budgets — free online
+- Netflix Chaos Monkey / Principles of Chaos Engineering

@@ -43,3 +43,29 @@ The mitigations listed (exponential backoff, circuit breakers, load shedding, ba
 - variation in network delay is known as *jitter*
 - avg times sensitive to *outliers*
 - *median/percentiles* are often better as they tell us what percentage of reqs come under a certain threshold 
+---
+## Interview Notes
+- **Little's Law**: `L = λ × W` (items in system = arrival rate × time in system). Holds for any stable system. Use it to size thread pools, connection pools, and queues.
+- **Percentiles**: p50 = typical user, p99/p999 = tail. Tail users are often your most valuable ones (most data, most requests). Amazon tracks p999.
+- **Tail latency amplification**: if one request fans out to N backends, the slowest one decides. With 100 backends each at 1% slow: `1 − 0.99^100 ≈ 63%` of user requests are slow.
+- **Never average percentiles** across machines or time windows. Merge histograms instead (HdrHistogram, t-digest, DDSketch).
+- **Coordinated omission**: load testers that wait for a response before sending the next request hide queueing delay. Send requests at a fixed rate, independent of response time.
+- **Utilization target**: keep busy resources around 60–75%. Above that, the curve above goes vertical.
+- **SLI / SLO / SLA**: the metric (p99 latency) / the internal target (p99 < 200ms) / the contract with penalties.
+- Mitigations for tail latency: hedged requests (send a backup after p95 time), request timeouts with budgets, caching, smaller fan-out.
+- Retry rule of thumb: retry only idempotent operations, cap retries (retry budget, e.g. max 10% extra load), add jitter.
+
+**Back-of-envelope numbers**: 1 day ≈ 86,400 s ≈ 10^5 s. 1M req/day ≈ 12 req/s. Peak ≈ 2–10× average.
+
+## Questions to Ponder
+- Why does p99 matter more than average for an SLO?
+- A service has p99 = 50ms and is called 10 times sequentially per page. What is the page's p99 roughly?
+- Your queue is at 90% utilization. Will adding 10% more capacity reduce latency by 10%? (No, far more. Why?)
+- How do you tell a metastable failure apart from a normal overload in dashboards?
+
+## Further Reading
+- *The Tail at Scale* — Dean & Barroso, CACM 2013 (must read)
+- *Metastable Failures in Distributed Systems* — Bronson et al., HotOS 2021
+- *Metastable Failures in the Wild* — Huang et al., OSDI 2022
+- *Timeouts, retries, and backoff with jitter* — AWS Builders' Library
+- *How NOT to Measure Latency* — Gil Tene (talk, coordinated omission)
