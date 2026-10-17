@@ -8,12 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "836a61ff9db9c3ab",
+            "id": "46a3d29ffa50efec",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Design a Rate limiter 2026-10-17 17.54.00.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Design a Rate limiter 2026-10-17 17.54.00.excalidraw"
+            }
+          },
+          {
+            "id": "cebb835d6c39fbb7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DDIA/Relational vs Document Models.md",
+                "file": "sys_design_v1/Design a Rate limiter.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +40,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Relational vs Document Models"
+              "title": "Design a Rate limiter"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -172,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DDIA/Trade-Offs in Data Systems Architecture.md",
+                "file": "Excalidraw/Design a Rate limiter 2026-10-17 13.36.55.excalidraw.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -182,13 +195,13 @@
             }
           },
           {
-            "id": "926d23f54fc27b8a",
+            "id": "09ecd91bfa300f87",
             "type": "leaf",
             "state": {
-              "type": "git-view",
+              "type": "review-queue-list-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-ghost",
+              "title": "review-queue-list-view"
             }
           }
         ],
@@ -196,7 +209,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -207,29 +221,48 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "836a61ff9db9c3ab",
+  "active": "cebb835d6c39fbb7",
   "lastOpenFiles": [
-    "DDIA/img/Pasted image 20261004130551.png",
-    "DDIA/Scalability.md",
+    "img/Pasted image 20261017182742.png",
+    "Excalidraw/Design a Rate limiter 2026-10-17 17.54.00.excalidraw.md",
+    "sys_design_v1/Design a Rate limiter.md",
+    "Excalidraw/Design a Rate limiter 2026-10-17 13.36.55.excalidraw.md",
+    "Excalidraw/Libraries/local-library.excalidrawlib",
+    "Excalidraw/Libraries",
+    "Excalidraw/Libraries/drwnio.excalidrawlib",
+    "Excalidraw/Libraries/architecture-diagram-components.excalidrawlib",
+    "Excalidraw/Libraries/system-design.excalidrawlib",
+    "Excalidraw/Libraries/software-architecture.excalidrawlib",
+    "Excalidraw",
+    "Untitled.base",
+    "Excalidraw/Drawing 2026-10-17 13.32.01.excalidraw.md",
+    "img/Pasted image 20261017131446.png",
+    "img/Pasted image 20261017130540.png",
+    "img/Pasted image 20261017102240.png",
+    "img/Pasted image 20261017100625.png",
+    "dumps/ebpf.md",
+    "Untitled",
+    "img/Pasted image 20261017094845.png",
+    "dumps/README.md.md",
+    "sys_design_v1",
     "DDIA/Relational vs Document Models.md",
-    "DDIA/img/Pasted image 20260914004047.png",
+    "img/Pasted image 20261004130551.png",
+    "DDIA/Scalability.md",
+    "img/Pasted image 20260914004047.png",
     "DDIA/Trade-Offs in Data Systems Architecture.md",
     "DDIA/Describing Performance.md",
     "DDIA/Fault Tolerance.md",
     "DDIA/Case study- social network.md",
     "img.md",
     "img/Pasted.md",
-    "img",
     "DDIA/img/Pasted.md",
-    "DDIA/img/Pasted image 20260906154851.png",
-    "DDIA/Fault Tolerance",
-    "DDIA/img/Pasted image 20260913175812.png",
-    "DDIA/img/Pasted image 20260902154406.png",
-    "DDIA/img",
-    "Pasted image 20260902153932.png",
-    "Untitled.base"
+    "img/Pasted image 20260906154851.png",
+    "img/Pasted image 20260913175812.png",
+    "img/Pasted image 20260902154406.png"
   ]
 }

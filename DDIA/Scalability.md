@@ -25,7 +25,7 @@ Some interesting questions?
 	- requires sharding and incurs all complexity of the distrubuted systrems 
 
 
-![](./img/Pasted%20image%2020260914004047.png)
+![](Pasted%20image%2020260914004047.png)
 ---
 ## Interview Notes
 - **Describe load first, then scale**: name the load parameters (reads/s, writes/s, read:write ratio, data size, fan-out, peak vs average) before proposing anything.
