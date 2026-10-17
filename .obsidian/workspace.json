@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sys_design_v1/Design a Rate limiter.md",
+                "file": "dumps/rate_limit/Blogs.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -47,15 +47,16 @@
                   "sortOrder": "alphabetical",
                   "showSearch": false,
                   "searchQuery": "",
-                  "backlinkCollapsed": false,
+                  "backlinkCollapsed": true,
                   "unlinkedCollapsed": true
                 }
               },
               "icon": "lucide-file",
-              "title": "Design a Rate limiter"
+              "title": "Blogs"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -117,7 +118,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "2428ed87850fc01b",
@@ -213,14 +215,23 @@
               "icon": "lucide-ghost",
               "title": "review-queue-list-view"
             }
+          },
+          {
+            "id": "ba4da321a5030a15",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -236,8 +247,15 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "46a3d29ffa50efec",
+  "active": "cebb835d6c39fbb7",
   "lastOpenFiles": [
+    "dumps/README.md.md",
+    "dumps/rate_limit/Blogs.md",
+    "Pasted image 20261017204036.png",
+    "dumps/idempotency/blogs.md",
+    "dumps/idempotency",
+    "sys_design_v1/Design a Rate limiter.md",
+    "dumps/rate_limit",
     "sys_design_v1/sed2t5JgG",
     "Excalidraw/Design a Rate limiter 2026-10-17 17.54.00.excalidraw.svg",
     "Excalidraw/Design a Rate limiter 2026-10-17 13.36.55.excalidraw.svg",
@@ -250,8 +268,6 @@
     "Excalidraw/Design a Rate limiter 2026-10-17 17.54.00.excalidraw.light.png",
     "Excalidraw/Design a Rate limiter 2026-10-17 17.54.00.excalidraw.dark.png",
     "Excalidraw/Design a Rate limiter 2026-10-17 17.54.00.excalidraw.light.svg",
-    "Excalidraw/Design a Rate limiter 2026-10-17 17.54.00.excalidraw.dark.svg",
-    "sys_design_v1/Design a Rate limiter.md",
     "sys_design_v1/sedTZgOPu",
     "Excalidraw/Libraries/local-library.excalidrawlib",
     "Excalidraw/Libraries",
@@ -259,12 +275,8 @@
     "Excalidraw/Libraries/architecture-diagram-components.excalidrawlib",
     "Excalidraw/Libraries/system-design.excalidrawlib",
     "Excalidraw/Libraries/software-architecture.excalidrawlib",
-    "Excalidraw",
-    "Untitled.base",
     "Excalidraw/Drawing 2026-10-17 13.32.01.excalidraw.md",
     "dumps/ebpf.md",
-    "Untitled",
-    "dumps/README.md.md",
     "DDIA/Relational vs Document Models.md",
     "DDIA/Scalability.md",
     "DDIA/Trade-Offs in Data Systems Architecture.md",
