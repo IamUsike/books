@@ -12,7 +12,7 @@ how would different answers to these questions impact the design decisions?
 
 ## Algorithms 
 ### Token Bucket 
-![511](Pasted%20image%2020261017094845.png)
+![511](../img/Pasted%20image%2020261017094845.png)
 
 - bucket size: max no of tokens allowed in the bucket. 
 - refill rate: number of tokens put into the bucket every second. 
@@ -31,7 +31,7 @@ how would different answers to these questions impact the design decisions?
 - fine tuning bucket size and token refill rate 
 
 ### Leaking Bucket 
-![](Pasted%20image%2020261017100625.png)
+![](../img/Pasted%20image%2020261017100625.png)
 
 - bucket size
 - outflow rate
@@ -49,7 +49,7 @@ how would different answers to these questions impact the design decisions?
 - each req in that window increments the counter. 
 - once the reqs reach the threshold no more reqs are processed in that window 
 
-![](Pasted%20image%2020261017102240.png)
+![](../img/Pasted%20image%2020261017102240.png)
 
 - one main problem witrh this is traffic burts at the edge could cause more reqs than the allowed. 
 
@@ -60,7 +60,7 @@ this counters the main con of fixed window.
 - when a new req comes in remove all the outdated timestamps(older than the start of the current time window)
 - add timestamp of the new req to the log. 
 - if the log size is the same or lower than the allowed count, a request is accepted. 
-![527](Pasted%20image%2020261017130540.png)
+![527](../img/Pasted%20image%2020261017130540.png)
 
 **pros**
 - Rate limiting implemented by this is very accurate. In any rolling window, reqs will not exceed the rate limit. 
@@ -71,7 +71,7 @@ this counters the main con of fixed window.
 ### Sliding window counter 
 - combines fixed window counter and sliding window log. 
 
-![570](Pasted%20image%2020261017131446.png)
+![570](../img/Pasted%20image%2020261017131446.png)
 
 - no of reqs in the rolling window is calculated using the formula 
 `reqs in cur window + req in the prev window * overlap percentage of the rolling window and the prev window`
@@ -82,7 +82,7 @@ this counters the main con of fixed window.
 --- 
 ## HLD 
 
-![[Design a Rate limiter 2026-10-17 13.36.55.excalidraw|800]]
+![800](../Excalidraw/Design%20a%20Rate%20limiter%202026-10-17%2013.36.55.excalidraw.svg)
 
 - the client sends a req to the rl middleware
 - rl fetches the ctr from the corresponding bucket in redis  and checks if the limit is reached or not. 
@@ -95,7 +95,7 @@ this counters the main con of fixed window.
 1. how are the rl rules created? Where are the rules stored?
 2. how to handle reqs that are ratelimited. ?
 
-![[Design a Rate limiter 2026-10-17 17.54.00.excalidraw|900]]
+![900](../Excalidraw/Design%20a%20Rate%20limiter%202026-10-17%2017.54.00.excalidraw.svg)
 
 - rules are stored on the disk and are then stored into a centralised cache(s) by the workers for consistency. 
 1. client sends the req 
@@ -114,7 +114,7 @@ Locks are the most obvious solution for solving race condition. However, locks w
 
 **sync issues**
 use a centralised cache like redis :d 
-![561](Pasted%20image%2020261017182742.png)
+![561](../img/Pasted%20image%2020261017182742.png)
 
 --- 
 ## Performance Optimization 

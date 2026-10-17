@@ -30,7 +30,7 @@ Pick based on your access patterns and consistency needs, not scale in the abstr
 - **ORM** -> look into N+1 queries 
 
 ### one to many relationships 
-![433](Pasted%20image%2020261004130551.png)
+![433](../img/Pasted%20image%2020261004130551.png)
 
 
 - document model provides better locality. 

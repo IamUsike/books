@@ -11,12 +11,24 @@
             "id": "46a3d29ffa50efec",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Design a Rate limiter 2026-10-17 17.54.00.excalidraw.md"
+                "file": "sys_design_v1/Design a Rate limiter.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "excalidraw-icon",
-              "title": "Design a Rate limiter 2026-10-17 17.54.00.excalidraw"
+              "icon": "lucide-file",
+              "title": "Design a Rate limiter"
             }
           },
           {
@@ -43,8 +55,7 @@
               "title": "Design a Rate limiter"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,8 +117,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "2428ed87850fc01b",
@@ -226,12 +236,23 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "cebb835d6c39fbb7",
+  "active": "46a3d29ffa50efec",
   "lastOpenFiles": [
-    "img/Pasted image 20261017182742.png",
-    "Excalidraw/Design a Rate limiter 2026-10-17 17.54.00.excalidraw.md",
-    "sys_design_v1/Design a Rate limiter.md",
+    "sys_design_v1/sed2t5JgG",
+    "Excalidraw/Design a Rate limiter 2026-10-17 17.54.00.excalidraw.svg",
+    "Excalidraw/Design a Rate limiter 2026-10-17 13.36.55.excalidraw.svg",
     "Excalidraw/Design a Rate limiter 2026-10-17 13.36.55.excalidraw.md",
+    "Excalidraw/Design a Rate limiter 2026-10-17 13.36.55.excalidraw.light.png",
+    "Excalidraw/Design a Rate limiter 2026-10-17 13.36.55.excalidraw.dark.png",
+    "Excalidraw/Design a Rate limiter 2026-10-17 13.36.55.excalidraw.light.svg",
+    "Excalidraw/Design a Rate limiter 2026-10-17 13.36.55.excalidraw.dark.svg",
+    "Excalidraw/Design a Rate limiter 2026-10-17 17.54.00.excalidraw.md",
+    "Excalidraw/Design a Rate limiter 2026-10-17 17.54.00.excalidraw.light.png",
+    "Excalidraw/Design a Rate limiter 2026-10-17 17.54.00.excalidraw.dark.png",
+    "Excalidraw/Design a Rate limiter 2026-10-17 17.54.00.excalidraw.light.svg",
+    "Excalidraw/Design a Rate limiter 2026-10-17 17.54.00.excalidraw.dark.svg",
+    "sys_design_v1/Design a Rate limiter.md",
+    "sys_design_v1/sedTZgOPu",
     "Excalidraw/Libraries/local-library.excalidrawlib",
     "Excalidraw/Libraries",
     "Excalidraw/Libraries/drwnio.excalidrawlib",
@@ -241,28 +262,17 @@
     "Excalidraw",
     "Untitled.base",
     "Excalidraw/Drawing 2026-10-17 13.32.01.excalidraw.md",
-    "img/Pasted image 20261017131446.png",
-    "img/Pasted image 20261017130540.png",
-    "img/Pasted image 20261017102240.png",
-    "img/Pasted image 20261017100625.png",
     "dumps/ebpf.md",
     "Untitled",
-    "img/Pasted image 20261017094845.png",
     "dumps/README.md.md",
-    "sys_design_v1",
     "DDIA/Relational vs Document Models.md",
-    "img/Pasted image 20261004130551.png",
     "DDIA/Scalability.md",
-    "img/Pasted image 20260914004047.png",
     "DDIA/Trade-Offs in Data Systems Architecture.md",
     "DDIA/Describing Performance.md",
     "DDIA/Fault Tolerance.md",
     "DDIA/Case study- social network.md",
     "img.md",
     "img/Pasted.md",
-    "DDIA/img/Pasted.md",
-    "img/Pasted image 20260906154851.png",
-    "img/Pasted image 20260913175812.png",
-    "img/Pasted image 20260902154406.png"
+    "DDIA/img/Pasted.md"
   ]
 }
