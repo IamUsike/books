@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "skills": {
+    "api-design": {
+      "source": "proyecto26/system-design-skills",
+      "sourceType": "github",
+      "skillPath": "skills/api-design/SKILL.md",
+      "computedHash": "d9723f258c3c56100b1a27c04a5cf5567648e6f2332a4faf54a382d6f113ff88"
+    },
+    "architecture-diagram": {
+      "source": "proyecto26/system-design-skills",
+      "sourceType": "github",
+      "skillPath": "skills/architecture-diagram/SKILL.md",
+      "computedHash": "53fbfec72ed4c1afa4c1f5b7b0bf1184cf52451058d83a9d95eccf7ffcf001b8"
+    },
+    "back-of-the-envelope": {
+      "source": "proyecto26/system-design-skills",
+      "sourceType": "github",
+      "skillPath": "skills/back-of-the-envelope/SKILL.md",
+      "computedHash": "d1ef4db15f69a045719bd868dc4fbb47971a083a51330a4ca4975c055ca1daac"
+    },
+    "blob-store": {
+      "source": "proyecto26/system-design-skills",
+      "sourceType": "github",
+      "skillPath": "skills/blob-store/SKILL.md",
+      "computedHash": "bdc51e2ea99c176466e7426362f0550ecdfee0cdd19c16c08ef0d105baebc5d3"
+    },
+    "caching": {
+      "source": "proyecto26/system-design-skills",
+      "sourceType": "github",
+      "skillPath": "skills/caching/SKILL.md",
+      "computedHash": "11ed4c7a98b7123c7c9e367a148ab5362a5c0732fd9d597bf9ff791f5c2100a0"
+    },
+    "consistency-coordination": {
+      "source": "proyecto26/system-design-skills",
+      "sourceType": "github",
+      "skillPath": "skills/consistency-coordination/SKILL.md",
+      "computedHash": "fe73f2d52900fac2e7c2dc7383c9698cb717417475acb5494957aa07c2c804d3"
+    },
+    "content-delivery": {
+      "source": "proyecto26/system-design-skills",
+      "sourceType": "github",
+      "skillPath": "skills/content-delivery/SKILL.md",
+      "computedHash": "df4cc787973dac11a70fdfb1cec612ae6136136e15a6d044003426ee41e0a45e"
+    },
+    "data-storage": {
+      "source": "proyecto26/system-design-skills",
+      "sourceType": "github",
+      "skillPath": "skills/data-storage/SKILL.md",
+      "computedHash": "08297fd0b45582dcc29c1ff56630737949bc4b070c684d310145df80fc4a72e8"
+    },
+    "distributed-logging": {
+      "source": "proyecto26/system-design-skills",
+      "sourceType": "github",
+      "skillPath": "skills/distributed-logging/SKILL.md",
+      "computedHash": "859ba5686edc43b0b963effae52833beacb0ed1cdcbce706d87119928b35f98f"
+    },
+    "distributed-search": {
+      "source": "proyecto26/system-design-skills",
+      "sourceType": "github",
+      "skillPath": "skills/distributed-search/SKILL.md",
+      "computedHash": "244812a28ccf62cf431acc468306f4ab9b6c30b977bd1e8770f6b36772e9f56a"
+    },
+    "dns": {
+      "source": "proyecto26/system-design-skills",
+      "sourceType": "github",
+      "skillPath": "skills/dns/SKILL.md",
+      "computedHash": "f92bb42ce82b658442516374fd39f426097e7294aa7211a6022f69a933e5245f"
+    },
+    "grill-me": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/productivity/grill-me/SKILL.md",
+      "computedHash": "9cdbb4b8f7a3aeaef82e6230c9e823500d4a8a1214c726cf342cf9829d34fc7d"
+    },
+    "load-balancing": {
+      "source": "proyecto26/system-design-skills",
+      "sourceType": "github",
+      "skillPath": "skills/load-balancing/SKILL.md",
+      "computedHash": "d76f319c47cf7cfdcffbad27d48c2c74adc005173d4f3e22c750abb23f9cd06f"
+    },
+    "mermaid-studio": {
+      "source": "tech-leads-club/agent-skills",
+      "sourceType": "github",
+      "skillPath": "packages/skills-catalog/skills/(tooling)/mermaid-studio/SKILL.md",
+      "computedHash": "ac6c344e21319a5c7426a1b8c21229afe9a687aa743bd366bf11cad66bef328d"
+    },
+    "messaging-streaming": {
+      "source": "proyecto26/system-design-skills",
+      "sourceType": "github",
+      "skillPath": "skills/messaging-streaming/SKILL.md",
+      "computedHash": "58ab68d0f681dac3c44daf10092a71452b3c5d6a33d73c068627157a33b867fd"
+    },
+    "observability": {
+      "source": "proyecto26/system-design-skills",
+      "sourceType": "github",
+      "skillPath": "skills/observability/SKILL.md",
+      "computedHash": "f01d7aad5d9fc236957c35172e4b2ff8e79e3d87675a9266cae7e7f5d854c5ef"
+    },
+    "requirements-scoping": {
+      "source": "proyecto26/system-design-skills",
+      "sourceType": "github",
+      "skillPath": "skills/requirements-scoping/SKILL.md",
+      "computedHash": "425563f352a798ac73a5d01ce0e3992002ae107b86c033ad8f94353697cca174"
+    },
+    "resilience-failure": {
+      "source": "proyecto26/system-design-skills",
+      "sourceType": "github",
+      "skillPath": "skills/resilience-failure/SKILL.md",
+      "computedHash": "1e0573d2ce6238f41ef7f65cb32bfe4f22cc504dc0eb6c4cf9e44dd36dec787a"
+    },
+    "scaling-evolution": {
+      "source": "proyecto26/system-design-skills",
+      "sourceType": "github",
+      "skillPath": "skills/scaling-evolution/SKILL.md",
+      "computedHash": "d4cbe238ab67384a9dce6fc697f11293671ea63375d86e403ccf695ba92a6872"
+    },
+    "sequencer": {
+      "source": "proyecto26/system-design-skills",
+      "sourceType": "github",
+      "skillPath": "skills/sequencer/SKILL.md",
+      "computedHash": "9dfe7c8be265e10404e3e3238ae06d5d74c81aa5ad01b903ac184058ae52819d"
+    },
+    "service-decomposition": {
+      "source": "proyecto26/system-design-skills",
+      "sourceType": "github",
+      "skillPath": "skills/service-decomposition/SKILL.md",
+      "computedHash": "a3f665a4dcd4e8409953ab6990ec48701bf967b9fea96cb6eba4489e1f52290f"
+    },
+    "sharded-counters": {
+      "source": "proyecto26/system-design-skills",
+      "sourceType": "github",
+      "skillPath": "skills/sharded-counters/SKILL.md",
+      "computedHash": "d06fde9543544420c373faee5c410cd115a70b09d0a226eb4c92bd517fe67435"
+    },
+    "system-design": {
+      "source": "proyecto26/system-design-skills",
+      "sourceType": "github",
+      "skillPath": "skills/system-design/SKILL.md",
+      "computedHash": "d8fd601b84d77a4ca6bbe6751fa899b8fa9a6bbdcfcb142c0a01ef79107c0f35"
+    },
+    "task-scheduling": {
+      "source": "proyecto26/system-design-skills",
+      "sourceType": "github",
+      "skillPath": "skills/task-scheduling/SKILL.md",
+      "computedHash": "d86d9b105a3e5aad2f7dc8413e7e0833dc64f084f99eafbb02a0d9aa867d8faf"
+    }
+  }
+}

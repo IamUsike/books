@@ -4,35 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e5e06f38aadfe4b3",
+        "id": "b720319c339b9ada",
         "type": "tabs",
         "children": [
           {
-            "id": "46a3d29ffa50efec",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "sys_design_v1/Design a Rate limiter.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Design a Rate limiter"
-            }
-          },
-          {
-            "id": "cebb835d6c39fbb7",
+            "id": "27eddfa8e8db5a47",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -47,7 +23,7 @@
                   "sortOrder": "alphabetical",
                   "showSearch": false,
                   "searchQuery": "",
-                  "backlinkCollapsed": true,
+                  "backlinkCollapsed": false,
                   "unlinkedCollapsed": true
                 }
               },
@@ -55,8 +31,7 @@
               "title": "Blogs"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -212,8 +187,8 @@
             "state": {
               "type": "review-queue-list-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "review-queue-list-view"
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
             }
           },
           {
@@ -247,16 +222,24 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "cebb835d6c39fbb7",
+  "active": "ba4da321a5030a15",
   "lastOpenFiles": [
-    "dumps/README.md.md",
+    "sys_design_v1/Design a Rate limiter.md",
     "dumps/rate_limit/Blogs.md",
+    "sys_design_v1/Design a Rate limiter.md.tmp.2904951.1e460d8777c1",
+    "dumps/rate_limit/Blogs.md.tmp.2904951.a6bca14c22f8",
+    "dumps/rate_limit/Blogs.md.tmp.2904951.2f64af93c5f0",
+    "sys_design_v1/Design a Rate limiter.md.tmp.2904951.5e6eac325b69",
+    "sys_design_v1/Design a Rate limiter.md.tmp.2904951.9765b3257a32",
+    "sys_design_v1/Design a Rate limiter.md.tmp.2904951.37da860a840d",
+    "sys_design_v1/Design a Rate limiter.md.tmp.2904951.0f440a47f8f9",
+    "sys_design_v1/Design a Rate limiter.md.tmp.2904951.c93ee2511f19",
+    "sys_design_v1/Design a Rate limiter.md.tmp.2904951.2257836c2d55",
+    "dumps/README.md",
+    "().md",
+    "skills-lock.json",
     "Pasted image 20261017204036.png",
     "dumps/idempotency/blogs.md",
-    "dumps/idempotency",
-    "sys_design_v1/Design a Rate limiter.md",
-    "dumps/rate_limit",
-    "sys_design_v1/sed2t5JgG",
     "Excalidraw/Design a Rate limiter 2026-10-17 17.54.00.excalidraw.svg",
     "Excalidraw/Design a Rate limiter 2026-10-17 13.36.55.excalidraw.svg",
     "Excalidraw/Design a Rate limiter 2026-10-17 13.36.55.excalidraw.md",
@@ -268,13 +251,6 @@
     "Excalidraw/Design a Rate limiter 2026-10-17 17.54.00.excalidraw.light.png",
     "Excalidraw/Design a Rate limiter 2026-10-17 17.54.00.excalidraw.dark.png",
     "Excalidraw/Design a Rate limiter 2026-10-17 17.54.00.excalidraw.light.svg",
-    "sys_design_v1/sedTZgOPu",
-    "Excalidraw/Libraries/local-library.excalidrawlib",
-    "Excalidraw/Libraries",
-    "Excalidraw/Libraries/drwnio.excalidrawlib",
-    "Excalidraw/Libraries/architecture-diagram-components.excalidrawlib",
-    "Excalidraw/Libraries/system-design.excalidrawlib",
-    "Excalidraw/Libraries/software-architecture.excalidrawlib",
     "Excalidraw/Drawing 2026-10-17 13.32.01.excalidraw.md",
     "dumps/ebpf.md",
     "DDIA/Relational vs Document Models.md",
