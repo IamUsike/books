@@ -203,7 +203,7 @@ Main issues when scaling the system to support multiple servers and concurrent t
 - synchronization issue. 
 
 **Race conditions**
-Locks are the most obvious solution for solving race condition. However, locks will significantly slow down the system. Two strategies are commonly used to solve the problem: Lua script [13] and sorted sets data structure in Redis [8]. For readers interested in these strategies, refer to the corresponding reference materials [8] [13] 
+Locks are the most obvious solution for solving race condition. However, locks will significantly slow down the system. Two strategies are commonly used to solve the problem: Lua script [13] and sorted sets data structure in Redis [8]. For readers interested in these strategies, refer to the corresponding reference materials 
 
 > [!note] claude: Lua scripts
 > Redis is single-threaded and runs a Lua script atomically: no other command executes in the middle. So you put the whole "read, decide, write" into one script and the race disappears without locks. It's also one network round trip instead of several. Fixed window example:

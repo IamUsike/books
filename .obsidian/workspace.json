@@ -13,6 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "sys_design_v1/Design a Rate limiter.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Design a Rate limiter"
+            }
+          },
+          {
+            "id": "2b6c93fabff8a36e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "dumps/rate_limit/Blogs.md",
                 "mode": "source",
                 "source": false,
@@ -31,7 +55,8 @@
               "title": "Blogs"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -222,8 +247,10 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "ba4da321a5030a15",
+  "active": "2b6c93fabff8a36e",
   "lastOpenFiles": [
+    "dumps/rate_limit/Blogs.md.tmp.2904951.fe3ebafd098e",
+    "dumps/rate_limit/Blogs.md.tmp.2904951.f6cf34c7e61e",
     "sys_design_v1/Design a Rate limiter.md",
     "dumps/rate_limit/Blogs.md",
     "sys_design_v1/Design a Rate limiter.md.tmp.2904951.1e460d8777c1",
@@ -237,7 +264,6 @@
     "sys_design_v1/Design a Rate limiter.md.tmp.2904951.2257836c2d55",
     "dumps/README.md",
     "().md",
-    "skills-lock.json",
     "Pasted image 20261017204036.png",
     "dumps/idempotency/blogs.md",
     "Excalidraw/Design a Rate limiter 2026-10-17 17.54.00.excalidraw.svg",

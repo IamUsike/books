@@ -28,6 +28,44 @@ hmm how would i go on about implementing this?
 >
 > A queue per user is what you'd do if you wanted to *wait* instead of reject (leaky bucket style). That's valid too, but costs memory and adds latency.
 
+> [!note] claude: who increments and who decrements? is there a race?
+> **Usually the same component does both.** Middleware wraps the handler, so it runs before and after the request:
+> ```
+> middleware(req):
+>     if INCR(inflight:{user}) > 20: DECR; return 429
+>     try:
+>         return next(req)          # API handler runs here
+>     finally:
+>         DECR(inflight:{user})     # success, error, or exception
+> ```
+> The API servers don't need to know the limiter exists.
+>
+> **Even if split (gateway INCRs, API server DECRs), INCR/DECR themselves don't race.** Each is atomic in Redis, so concurrent DECRs never lose an update. The HLD race came from separate read, check and write steps; checking the value INCR *returns* avoids that. One small leftover race: "INCR, DECR if over" briefly over-counts, so another request can be wrongly rejected. It never over-admits, so it's acceptable. Lua removes it.
+>
+> **The real danger is counter drift, not races:**
+> - **lost DECR**: server crashes mid-request, counter stays high, user slowly locked out
+> - **early DECR**: gateway times out at 30s and decrements while the backend is still working, so the counter is too low and it over-admits
+> - **double DECR**: retries, or both middleware and server decrementing, so the counter goes negative and it over-admits
+>
+> **This is the real reason for the sorted set:**
+> - entries are request IDs, not anonymous +1/-1
+> - `ZREM req_id` is idempotent (removing twice is a no-op), so no double-DECR
+> - stale entries expire by timestamp, so lost DECRs self-heal
+> - set the expiry above the longest real request duration (backend timeout + margin), or you're back to the early-DECR problem
+> - check + cleanup + add go in one Lua script; the `ZREM` on completion can be a separate call since it's safe alone
+
+> [!note] claude: does the response pass back through the middleware?
+> Yes, in both common setups:
+> - **in-process middleware** (Express, Axum/tower layers, Django middleware): the middleware *calls* the handler as a function, so when the handler returns, control goes back into the middleware by the normal call stack. That's why the `finally` runs.
+> - **gateway / reverse proxy** (Envoy, Nginx, Kong): the client is connected to the proxy, not the API server. The proxy forwards the request, waits, and relays the response, so it sees the response finish because it's the one sending it.
+>
+> Cases where "response finished" is fuzzy:
+> - **streaming responses** (SSE, big downloads, chunked): the handler can return before the body is fully sent. Decrement when the stream closes, not when headers go out.
+> - **WebSockets / long-lived connections**: one "request" can last hours. Limit concurrent *connections* instead and decrement on disconnect.
+> - **async jobs** (`202 Accepted`, then background work): the middleware decrements immediately while the real work is still running. Put the concurrency limit on the job queue / workers instead.
+> - **proxy timeout**: the proxy gives up at 30s and decrements, the backend keeps working. That's the early-DECR case above.
+> - **Direct Server Return**: some L4 load balancer setups send the response straight from server to client, skipping the balancer. A limiter living there never sees the response. Rare for L7 rate limiting, but it's the one setup where the response really doesn't come back through.
+
 ![Blog > Rate limiters > Graph 2](https://images.stripeassets.com/fzn2n1nzq965/6n0cFumdlNxMYdkfdz0JRu/24c589e3516573fb72068d8d35a7f3ef/image.png?w=1620&q=80)
 
 3. **fleet usage load shedder**
